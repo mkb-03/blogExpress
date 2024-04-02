@@ -13,5 +13,5 @@ app.use('/', require(path.join(__dirname, 'routes/blogs.js')))
 
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Blog app listening on port ${port}`)
 })
