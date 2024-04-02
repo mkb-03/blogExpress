@@ -16,9 +16,9 @@ router.get('/blog', (req, res) => {
 })
 
 router.get('/blogpost/:slug', (req, res) => {
-
+    console.log(req.params.slug)
     myBlog = blogs.filter((e)=>{
-        e.slug = req.params.slug
+        return e.slug = req.params.slug
     })
 
     res.sendFile(path.join(__dirname, '../templates/blogpage.html'))
