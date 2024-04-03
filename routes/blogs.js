@@ -4,7 +4,9 @@ const router = express.Router()
 const blogs = require('../data/blogs')
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../templates/index.html'))
+    // res.sendFile(path.join(__dirname, '../templates/index.html'))
+
+    res.render('home')
 })
 
 router.get('/blog', (req, res) => {
